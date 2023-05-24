@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fontawesome.com/v4.7.0/icons">
+  <style>
+    /* UTILITIES */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content:space-between;
+ padding: 20px;
+ color: rgb(237, 238, 243);
+ background-color:#05104b;
+ 
+ 
+}
+.nav-links a {
+ color: rgb(237,238,243);
+ 
+}
+/* LOGO */
+.logo {
+ font-size: 36px;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.menu li:hover {
+ background-color: rgb(87, 189, 189);
+ border-radius: 5px;
+ transition: 0.3s ease;
+ color: black;
+}
+.menu li {
+ padding: 5px 15px;
+ 
+}
+/* DROPDOWN MENU */
+.services {
+ position: relative; 
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+.a img{
+    width: 100%;
+    height: 400px;
+}
+.c img{
+    
+    width: 300px ;
+    height: 250px;
+    margin-top: 0px;
+    margin-right: 30px;
+    border-radius: 15%;
+    border: 1px hidden rgb(29, 27, 27);
+  
+    float: right;
+}
+.b{
+    margin-left:15%;
+   margin-right:10%;
+   margin-top: 5%;
+   border-top:1px solid #44759e;
+   border-bottom:1px solid #5469af;
+   border-left:5px solid #19376e;
+   border-right: 1px solid #4352a5;
+   border-radius:5%;
+   width: 65%;
+   height: 400px;
+   clear: none;
+   text-align:left ;
+   margin-bottom: 30px;
+}
+.b:hover{
+    box-shadow: 0px 8px 8px 0px grey;
+}
+.d{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    margin-top: 18px;
+    font-size: 40px;
+}
+.e{
+     margin-left: 30px;
+     margin-top: 30px;
+     font-size: 25px;
+}
+big{
+    color: #960755;
+}
+.bottom a{
+    background-color: #19376e;
+    width:200px;
+   height:38px;
+   color:aliceblue;
+   display: flex;
+   font-size: 1.4rem;
+   justify-content: center;
+   align-items: center;
+   margin-top: 4%;
+   border-radius: 20px;
+   font-weight: 500;
+   padding: 10px;
+   margin-bottom: 5%;
+}
+.bottom a:hover{
+   background-color: aliceblue;
+    color: #19376e;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px 0px;
+}
+
+.course{
+    margin-top: 5%;
+    width: 270px;
+    height: 340px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 7px 4px rgb(219, 220, 223);
+    display: inline-block;
+    margin-left: 20%;
+    justify-content: center;
+    background-color: rgb(174, 198, 230);
+align-items: center;
+font-family: 'Courier New', Courier, monospace;
+font-size: 20px;
+font-weight: 100;
+color:rgb(160, 35, 72) ;
+}
+.workshop{
+    margin-top: 5%;
+    width: 270px;
+    height: 340px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 7px 4px rgb(219, 220, 223);
+    display: inline-block;
+    margin-left: 16%;
+    justify-content: center;
+    background-color: rgb(174, 198, 230);
+align-items: center;
+font-family: 'Courier New', Courier, monospace;
+font-size: 20px;
+font-weight: 100;
+  color: rgb(160, 35, 72);
+}
+.course:hover{
+    transform: translateX(-20px);
+box-shadow: 5px 10px 30px rgba(40, 40, 41, 0.1);
+background-color: #5c94dd;
+transition: all ease 0.3s;
+color: whitesmoke;
+}
+.workshop:hover{
+    transform: translateX(20px);
+box-shadow: 5px 10px 30px rgba(40, 40, 41, 0.1);
+background-color: #5c94dd;
+transition: all ease 0.3s;
+color: whitesmoke;
+}
+.course img{
+    border-radius: 50%;
+    border: 1px solid grey;
+    width: 110px;
+    height: 100px;
+    margin-left: 80px;
+    margin-top: 70px;
+}
+.workshop img{
+    border-radius: 50%;
+    border: 1px solid grey;
+    width: 110px;
+    height: 100px;
+    margin-left: 80px;
+    margin-top: 70px;
+}
+footer{
+        text-align: center;
+        background-color: #05104b;
+        padding: 1em;
+        margin-top: 2%;
+        color: rgb(197, 197, 197);
+        margin: 0%;
+    }
+    
+    
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ color:rgb(237,238,243) ;
+ background-color:#05104b ;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+
+.menu li:hover {
+ display: inline-block;
+ background-color:rgb(87, 189, 189);
+ color: black;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.b{
+    height: 430px;
+    width: 80%;
+    margin-left: 10%;
+    
+}
+.c img{
+    width: 100px;
+    height:150px;
+    margin-right: 20px;
+}
+.e{
+    font-size: 25px;
+}
+.workshop{
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+}
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+    <nav class="navbar">
+        <!-- LOGO -->
+      
+        <div class="logo"><i class="fa fa-html5" aria-hidden="true"></i>&nbsp; HTML</div><br><br>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><i class="fa fa-home" aria-hidden="true"></i>&nbsp;<a href="home1.html">HOME</a></li>
+            <li><i class="fa fa-book" aria-hidden="true"></i>&nbsp;<a href="dup.html">ABOUT</a></li>
+            <li><i class="fa fa-picture-o" aria-hidden="true"></i>&nbsp;<a href="gallery.html">GALLERY</a></li>
+            <li><i class="fa fa-sticky-note" aria-hidden="true"></i>&nbsp;<a href="overview.html">OVERVIEW</a></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="contact.html">CONTACT</a></li>
+
+        </div>
+        </ul>
+</nav>
+<div class="a"><img src="m1.jpg"></div>
+<div class="b"><h1 class="d">HTML</h1><div class="c"><img src="m2.jpg"></div>
+<div class="e"><p><big>H</big>YPER <big>T</big>EXT <big>M</big>ARKUP <big>L</big>ANGUAGE</p>
+<p><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<big>I</big>t is a Scripting Language.</p>
+<p><strong>H</strong>&nbsp;= Hyper = Reference link<br>
+    <strong>T</strong>&nbsp;= Text = Content<br>
+    <strong>M</strong>&nbsp;= Markup = Predefined<br>
+    <strong>L</strong>&nbsp;= Language = Communication<br>
+</p></div></div>
+<div class="course"><img src="course.jpg"><br><center>Register for the course..<br><a href="course.html">Click here</a></center></div>
+<div class="workshop"><img src="workshop.jpg"><br><center>Register for the workshop..<br><a href="workshop.html">Click here</a></center></div>
+
+
+<center><p class="bottom"><a href="#" >More Details</a></p></center>
+<footer>
+    This website is optimised for learning.....<br>
+    Everything is reviewed to aviod errors, but we cannot warrant full correctness of all content.<br>While using Thissite, you agree to have read and accepted our 
+    <u>terms of use, cookie and privacy policy</u>.<br>Copyright @2022.<br>All Rights Reserved.
+  </footer> 
+
+
+<div style="text-align:right;position:fixed;z-index:9999999;bottom:0;width:auto;right:1%;cursor:pointer;line-height:0;display:block!important"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&&0<notification.length&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 1;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 50%; margin-left: 45%;}} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); width: 264px; border: 0; border-radius: 3px; background-color: #FF5C62 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Claim Deal</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Black Friday",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 48px; font-weight: 700;');var h2Tag=document.createElement("H2");h2Tag.innerHTML="Up to 90% off 4-year hosting plans + free domain, SSL & DDoS protection",h2Tag.setAttribute("style",'color: white; margin: 10px 0 15px 0; font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 400; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="$<span style='font-size: 80px;'>2.49</span>/mo",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 48px; font-weight: 700; margin: 0;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/bf-2022-bottom-banner.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}</script></body>
+</html>
